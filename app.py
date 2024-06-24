@@ -9,7 +9,7 @@ st.title("Churn Prediction Dashboard")
 # Load the model
 @st.cache_resource
 def load_model():
-    model = load('../models/random_forest_model.joblib')
+    model = load('./models/random_forest_model.joblib')
     return model
 
 # Load data for display
@@ -54,7 +54,7 @@ st.write(input_data)
 
 # Ensure feature scaling is consistent with the model's training
 scaler = StandardScaler()
-sample_data = load_data('../data/Churn_Modelling.csv')
+sample_data = load_data('./data/Churn_Modelling.csv')
 features = ['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
 sample_data = sample_data[features]
 scaler.fit(sample_data)
@@ -76,4 +76,4 @@ if st.button('Predict'):
     st.write(f'Probability of not churning: {prediction_proba[0][0]:.2f}')
 
 st.subheader('Sample Data')
-st.write(load_data('../data/Churn_Modelling.csv').head())
+st.write(load_data('./data/Churn_Modelling.csv').head())
