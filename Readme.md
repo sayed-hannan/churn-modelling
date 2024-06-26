@@ -37,4 +37,4 @@ steps from start to end and save model.
 For quick overview you can also use run training.ipynb.
 For visual interaction you can run streamlit app.
 
-``` git clone sayed-hannan/churn-modelling ```
+`` git clone sayed-hannan/churn-modelling ``
