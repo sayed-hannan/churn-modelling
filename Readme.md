@@ -37,4 +37,25 @@ steps from start to end and save model.
 For quick overview you can also use run training.ipynb.
 For visual interaction you can run streamlit app.
 
-`` git clone sayed-hannan/churn-modelling ``
+``` git clone https://github.com/sayed-hannan/churn-modelling.git ```
+
+``` cd churn modelling ```
+``` python -m venv venv ```
+
+**Activate the virtual environment:**
+   - **For Windows**
+   ``` venv/Scirpts/activate ```
+   - **For MacOs/Linux**
+   ``` source venv/bin/activate ```
+
+
+``` pip install -r requirements.text ```
+
+**For running app in local browser**
+``` streamlit run app.py ```
+**For quick overview use**
+training.ipynb
+
+also can run 
+
+```python main.py```
